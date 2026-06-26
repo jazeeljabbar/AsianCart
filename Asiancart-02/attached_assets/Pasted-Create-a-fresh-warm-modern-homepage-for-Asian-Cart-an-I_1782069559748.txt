@@ -1,0 +1,117 @@
+Create a fresh, warm, modern homepage for “Asian Cart”, an Indian online grocery and trader store.
+
+Use the uploaded Asian Cart branding and logo files exactly as supplied.
+
+Visual direction:
+Inspired by premium organic market and farm-to-table websites, but make it clearly Indian and grocery-focused. Use soft natural backgrounds, rice grains, lentils, nuts, spices, woven baskets, and clean product photography.
+
+Brand colours:
+- Forest green: #003C32
+- Lime green: #A7D92F
+- Fresh green: #58C13B
+- Cream: #F8F6EE
+- Sand/beige: #EDE5D4
+- Dark text: #1D2B25
+
+Build this as a responsive React + Tailwind homepage.
+
+Top announcement bar:
+“Fresh arrivals every week | Free shipping above ₹999”
+
+Navigation:
+- Logo
+- Search field
+- Shop by Category dropdown
+- Offers
+- Bulk Orders
+- Track Order
+- Account, Wishlist and Cart icons
+
+Hero:
+Use an immersive full-width hero with a soft cream background and a collage of Indian pantry ingredients:
+- Basmati rice
+- dals
+- whole grains
+- flour
+- almonds and cashews
+- spice jars
+- premium perfume bottles
+
+Hero copy:
+“Good ingredients begin with trusted sourcing.”
+“Essentials for every Indian kitchen.”
+
+Buttons:
+“Shop Best Sellers”
+“Browse Categories”
+
+Include a small delivery location selector:
+“Delivering to: Enter Pincode”
+
+Below hero:
+Show a horizontal row of category chips with icons:
+Rice & Flour | Grains & Pulses | Pantry Staples | Dry Fruits & Nuts | Perfumes | Offers
+
+Create a “Shop by Category” section:
+Use six uneven, editorial-style cards with photography and text overlays.
+Make Rice & Flour the large featured category.
+Use smaller cards for:
+- Grains & Pulses
+- Dry Fruits & Nuts
+- Pantry Staples
+- Perfumes
+- Seasonal Offers
+
+Create a “Best of Asian Cart” section:
+Use a warm cream background.
+Show product cards with:
+- Large product photo
+- Weight selector
+- Price in INR
+- Quick add button
+- “Popular” / “Best Value” labels
+
+Products:
+- Aged Basmati Rice
+- Chakki Fresh Atta
+- Premium Moong Dal
+- Whole Black Pepper
+- California Almonds
+- W240 Cashew Nuts
+- Cold Pressed Groundnut Oil
+- Signature Oud Attar
+
+Create a “Fresh Deals This Week” section:
+Use two large graphic offer banners:
+1. “Save More on Daily Staples — Up to 25% Off”
+2. “Premium Dry Fruits for Every Celebration”
+
+Create an educational section:
+Title: “From trusted traders to your table”
+Three content blocks:
+- Carefully selected suppliers
+- Clean packing and quality checks
+- Simple, dependable delivery
+
+Create a recipe / inspiration section:
+Title: “Kitchen Inspiration”
+Show three Indian food cards:
+- Comforting dal and rice bowl
+- Festive dry fruit platter
+- Everyday breakfast pantry staples
+Use this only as lifestyle content; do not turn it into a blog-heavy page.
+
+Create a bulk-buying callout:
+“Supplying homes, stores, restaurants and offices.”
+Button: “Talk to Our Bulk Order Team”
+
+Footer:
+Use dark forest green background, lime highlights, logo, useful links, support phone/email placeholders, social icons and newsletter signup.
+
+Interactions:
+- Category cards should link to mock category pages
+- Product “Add” button updates cart count
+- Search input filters the visible featured products
+- Mobile menu must be polished and usable
+- No excessive animations
+- Use elegant micro-interactions on hover

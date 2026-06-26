@@ -1,0 +1,116 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "2DmaMw_2PhfiiggtOMTKh"
+uri = "file://artifacts/asian-cart/public/hero.png"
+type = "image"
+title = "hero composition"
+
+[[generated]]
+id = "n5jAWukmWyIw2eDn-37zC"
+uri = "file://artifacts/asian-cart/public/category-rice.png"
+type = "image"
+title = "rice and flour category"
+
+[[generated]]
+id = "hY6xKHCdHLFkKGry5Rz9n"
+uri = "file://artifacts/asian-cart/public/category-grains.png"
+type = "image"
+title = "grains category"
+
+[[generated]]
+id = "oayt7EhdEvtClCk0SxhN7"
+uri = "file://artifacts/asian-cart/public/category-perfumes.png"
+type = "image"
+title = "perfumes category"
+
+[[generated]]
+id = "NIyTF-B7vhJc5OKXibEZG"
+uri = "file://artifacts/asian-cart/public/category-pantry.png"
+type = "image"
+title = "pantry staples category"
+
+[[generated]]
+id = "KE9hCBPltykcV8bS-h099"
+uri = "file://artifacts/asian-cart/public/category-dryfruits.png"
+type = "image"
+title = "dry fruits category"
+
+[[generated]]
+id = "HpR-gNPOK-WXT6Xbb2i6m"
+uri = "file://artifacts/asian-cart/public/category-bulk.png"
+type = "image"
+title = "bulk category"
+
+[[generated]]
+id = "etvYxRYjzdS-N7IYD0x5b"
+uri = "file://artifacts/asian-cart/public/deal-1.png"
+type = "image"
+title = "deal rice"
+
+[[generated]]
+id = "9zpVKUu1FYzKJ7xFAZ27r"
+uri = "file://artifacts/asian-cart/public/deal-2.png"
+type = "image"
+title = "deal rice 2"
+
+[[generated]]
+id = "FmF1H3N7It4-rXRtyKWgf"
+uri = "file://artifacts/asian-cart/public/deal-3.png"
+type = "image"
+title = "deal atta"
+
+[[generated]]
+id = "JNhpeWS0bys08HexamRBP"
+uri = "file://artifacts/asian-cart/public/deal-4.png"
+type = "image"
+title = "deal dal"
+
+[[generated]]
+id = "MGH_dr0lupzEQmc8B0FYd"
+uri = "file://artifacts/asian-cart/public/deal-5.png"
+type = "image"
+title = "deal chana"
+
+[[generated]]
+id = "DK5hSpbAzbNhdicX7U-KS"
+uri = "file://artifacts/asian-cart/public/deal-6.png"
+type = "image"
+title = "deal cashews"
+
+[[generated]]
+id = "n7jySZihKJV9_j7OVMueY"
+uri = "file://artifacts/asian-cart/public/deal-7.png"
+type = "image"
+title = "deal almonds"
+
+[[generated]]
+id = "4No_Ce6C6Uib0eORCoquN"
+uri = "file://artifacts/asian-cart/public/deal-8.png"
+type = "image"
+title = "deal perfume"
+
+[[generated]]
+id = "GcwWZmYzO9MYbO0pkDLqt"
+uri = "file://artifacts/asian-cart/public/need-1.png"
+type = "image"
+title = "need refill"
+
+[[generated]]
+id = "QGGVNBEEPyVWn3mzZE8da"
+uri = "file://artifacts/asian-cart/public/need-2.png"
+type = "image"
+title = "need gifting"
+
+[[generated]]
+id = "yQ3ntL8kQ4zumQq_x2Aqw"
+uri = "file://artifacts/asian-cart/public/need-3.png"
+type = "image"
+title = "need restaurant"
+
+[[generated]]
+id = "uFiZmHh_JskjWTLXbNp3u"
+uri = "file://artifacts/asian-cart/public/need-4.png"
+type = "image"
+title = "need fragrances"

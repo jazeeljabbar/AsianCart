@@ -1,0 +1,126 @@
+Create a modern, premium e-commerce homepage for an Indian grocery and trader brand called “Asian Cart”.
+
+Use the uploaded Asian Cart logo exactly as provided. Do not redraw or modify the logo. Use the horizontal logo version in the desktop header and the stacked logo version where needed on mobile.
+
+Brand personality:
+Premium, reliable, modern Indian grocery store, clean marketplace, quality ingredients, wholesale-friendly but still welcoming for households.
+
+Primary colors:
+- Deep forest green: #003C32 or similar
+- Bright lime green: #9AD62A
+- Fresh green: #57BF3C
+- White / off-white backgrounds
+- Charcoal grey for text
+- Soft warm beige backgrounds for grocery sections
+
+Build a fully responsive React/Vite homepage using Tailwind CSS.
+
+Header:
+- Thin announcement bar: “Free delivery on orders above ₹999 | Fresh stock. Trusted quality.”
+- Main navigation with logo on left
+- Search bar in the centre: “Search rice, pulses, dry fruits and more”
+- Icons on right: Account, Wishlist, Cart with item count
+- Desktop navigation links:
+  Home, Shop, Categories, Offers, Bulk Orders, About Us, Contact
+- Mobile menu drawer with categories and account/cart shortcuts
+
+Hero section:
+- Large two-column hero section
+- Left side: headline such as:
+  “Everyday essentials. Better quality.”
+  “From trusted traders to your kitchen.”
+- Supporting text: Asian Cart brings quality rice, grains, pantry staples, dry fruits, perfumes and household essentials to Indian homes and businesses.
+- CTA buttons:
+  “Shop Groceries”
+  “Explore Bulk Orders”
+- Right side: premium grocery visual with rice sacks, lentils, flour, dry fruits, spices and natural textures.
+- Include a small floating offer card: “Save up to 20% on pantry essentials”
+
+Category section:
+Create six large rounded category cards with attractive food/product images and clear labels:
+1. Rice & Flour
+2. Grains & Pulses
+3. Perfumes
+4. Pantry Staples
+5. Dry Fruits & Nuts
+6. Everyday Essentials
+
+Each card should have:
+- Product image
+- Category title
+- Small “Shop now →” text
+- Hover lift effect and subtle green overlay
+
+Trust strip:
+Use four trust badges with icons:
+- Carefully sourced products
+- Competitive trader pricing
+- Secure payments
+- Fast local delivery
+
+Featured products section:
+Title: “Popular Picks”
+Show eight product cards with realistic Indian grocery products:
+- Premium Basmati Rice 5 kg
+- Kerala Matta Rice 5 kg
+- Whole Wheat Flour 5 kg
+- Toor Dal 1 kg
+- Black Pepper 200 g
+- Cashew Nuts 500 g
+- Almonds 500 g
+- Premium Attar Perfume
+
+Each product card should include:
+- Product image
+- Product category
+- Product title
+- Star rating
+- Original price and discounted price in ₹
+- Add to cart button
+- Wishlist icon
+- Discount badge where relevant
+
+Promotional section:
+Create a wide lime green / forest green split banner:
+“Stock Your Pantry, Save More”
+“Special pricing on monthly grocery essentials.”
+Button: “View Offers”
+
+Bulk order section:
+A premium dark green section for hotels, restaurants, retailers and families buying in volume.
+Headline: “Buying in bulk?”
+Text: “Get better pricing for restaurants, stores, hostels, offices and events.”
+Button: “Request Bulk Pricing”
+
+Why Asian Cart section:
+Use a clean editorial layout with an image of grain sacks / Indian market shelves and these points:
+- Quality checked products
+- Reliable supplier network
+- Everyday value
+- Convenient ordering
+
+Testimonials:
+Three clean testimonial cards from Indian customers.
+
+Footer:
+- Logo
+- Short company description
+- Shop Categories links
+- Customer Support links
+- Contact details
+- Newsletter signup
+- Payment badges: UPI, Visa, Mastercard, RuPay
+- Copyright Asian Cart
+
+Design requirements:
+- Premium, spacious layout
+- Avoid overly cartoonish visuals
+- Rounded corners around 16–24px
+- Subtle shadows only
+- Use high-quality grocery and pantry images
+- Use smooth hover animations, not excessive motion
+- Use Indian Rupee pricing
+- Make product cards and buttons functional with mock interactions
+- Clicking “Add to Cart” should update a visible cart count
+- Include loading-safe image placeholders
+- Prioritize mobile usability and fast visual hierarchy

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Asian Cart"
+version = "1.0.0"
+id = "artifacts/asian-cart"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22534
+
+[services.development]
+run = "pnpm --filter @workspace/asian-cart run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/asian-cart", "run", "build" ]
+publicDir = "artifacts/asian-cart/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22534"
+BASE_PATH = "/"

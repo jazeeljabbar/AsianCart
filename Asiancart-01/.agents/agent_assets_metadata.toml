@@ -1,0 +1,98 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "J_fiAZU2biXwonH3oCV8l"
+uri = "file://artifacts/asian-cart/public/hero-grocery.png"
+type = "image"
+title = "Hero grocery collage"
+
+[[generated]]
+id = "_6OSWUotVVuonQ348af9I"
+uri = "file://artifacts/asian-cart/public/cat-rice-flour.png"
+type = "image"
+title = "Rice and flour category"
+
+[[generated]]
+id = "py8KW8hHJdhZFmwukM5vo"
+uri = "file://artifacts/asian-cart/public/cat-grains-pulses.png"
+type = "image"
+title = "Grains and pulses category"
+
+[[generated]]
+id = "k_zR7HqNlZrjTPipF2dd2"
+uri = "file://artifacts/asian-cart/public/cat-perfumes.png"
+type = "image"
+title = "Perfumes category"
+
+[[generated]]
+id = "3FISyF_YujxSfKJ8Tquei"
+uri = "file://artifacts/asian-cart/public/cat-pantry.png"
+type = "image"
+title = "Pantry staples category"
+
+[[generated]]
+id = "Nv9QzIuyzNu5axO1Aoq76"
+uri = "file://artifacts/asian-cart/public/cat-dry-fruits.png"
+type = "image"
+title = "Dry fruits category"
+
+[[generated]]
+id = "MbOlFMBfDapeoxUNkM_uI"
+uri = "file://artifacts/asian-cart/public/cat-essentials.png"
+type = "image"
+title = "Household essentials category"
+
+[[generated]]
+id = "EpAfXh6gutLOrEHSp_vqk"
+uri = "file://artifacts/asian-cart/public/why-asian-cart.png"
+type = "image"
+title = "Why Asian Cart side image"
+
+[[generated]]
+id = "blcuGmyLdSg6DVjtib8fT"
+uri = "file://artifacts/asian-cart/public/prod-basmati.png"
+type = "image"
+title = "Premium basmati rice"
+
+[[generated]]
+id = "0zSSTqNkTY9pwsTR3eMPh"
+uri = "file://artifacts/asian-cart/public/prod-matta.png"
+type = "image"
+title = "Kerala matta rice"
+
+[[generated]]
+id = "gWC3XoLJePbnDgYBi0Xij"
+uri = "file://artifacts/asian-cart/public/prod-wheat.png"
+type = "image"
+title = "Whole wheat flour"
+
+[[generated]]
+id = "pHCXV0sQnJxbC3zlNm001"
+uri = "file://artifacts/asian-cart/public/prod-toor.png"
+type = "image"
+title = "Toor dal yellow lentils"
+
+[[generated]]
+id = "4RCERWRbq9-elm82dtJrh"
+uri = "file://artifacts/asian-cart/public/prod-pepper.png"
+type = "image"
+title = "Whole black pepper"
+
+[[generated]]
+id = "pcZexGalQoW7kHGTvVhTH"
+uri = "file://artifacts/asian-cart/public/prod-cashew.png"
+type = "image"
+title = "Premium cashew nuts"
+
+[[generated]]
+id = "GSpg9c3XduQeQDX5mtQW3"
+uri = "file://artifacts/asian-cart/public/prod-almond.png"
+type = "image"
+title = "Premium California almonds"
+
+[[generated]]
+id = "rYHWLzduvADUgiwbct7MC"
+uri = "file://artifacts/asian-cart/public/prod-attar.png"
+type = "image"
+title = "Premium Indian attar perfume"

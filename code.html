@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asian Cart | Shop Smarter. Discover Products You’ll Love.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#c0c6db",
+                    "surface-tint": "#006c4a",
+                    "on-tertiary-container": "#fcfdfe",
+                    "primary-fixed-dim": "#68dba9",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#d9e3f7",
+                    "secondary-fixed": "#dce2f7",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#00855d",
+                    "on-primary-fixed": "#002114",
+                    "surface-dim": "#d0daef",
+                    "primary-fixed": "#85f8c4",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary": "#5a5c5d",
+                    "inverse-primary": "#68dba9",
+                    "on-background": "#121c2a",
+                    "on-secondary-fixed-variant": "#404758",
+                    "on-surface": "#121c2a",
+                    "surface-container-high": "#dee9fd",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "surface": "#f9f9ff",
+                    "surface-container-low": "#eff3ff",
+                    "background": "#f9f9ff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#f5fff7",
+                    "outline": "#6d7a72",
+                    "on-surface-variant": "#3d4a42",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-tertiary-fixed": "#191c1d",
+                    "surface-container": "#e6eeff",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "surface-container-highest": "#d9e3f7",
+                    "secondary-container": "#d9dff5",
+                    "surface-bright": "#f9f9ff",
+                    "secondary": "#575e70",
+                    "tertiary-fixed": "#e1e3e4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#737576",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#273140",
+                    "on-secondary-fixed": "#141b2b",
+                    "outline-variant": "#bccac0",
+                    "on-secondary-container": "#5c6274",
+                    "primary": "#006948",
+                    "on-primary-fixed-variant": "#005137"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "16px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px",
+                    "stack-sm": "12px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            gap: 24px;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 180px);
+            }
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        @keyframes pulse-ring {
+            0% { transform: scale(.33); }
+            80%, 100% { opacity: 0; }
+        }
+        @keyframes pulse-dot {
+            0% { transform: scale(.8); }
+            50% { transform: scale(1); }
+            100% { transform: scale(.8); }
+        }
+        .hotspot {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+        .hotspot-dot {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+            animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+        }
+        .hotspot-dot::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 300%;
+            height: 300%;
+            box-sizing: border-box;
+            margin-left: -100%;
+            margin-top: -100%;
+            border-radius: 45px;
+            background-color: white;
+            animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        .hotspot-card {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+        }
+        .hotspot:hover .hotspot-card {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .toast-slide-in {
+            animation: toast-in 0.5s ease forwards;
+        }
+        @keyframes toast-in {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Announcement Bar -->
+<div class="bg-inverse-surface text-surface py-2 text-center font-label-md text-label-md">
+<p>Free delivery on selected products | Secure payments | Easy returns</p>
+</div>
+<!-- Header -->
+<header class="sticky top-0 w-full z-50 bg-surface border-b border-outline-variant shadow-sm transition-all duration-300" id="topAppBar">
+<div class="flex items-center justify-between px-margin-desktop py-4 max-w-container-max mx-auto w-full">
+<div class="flex items-center gap-8 flex-1">
+<a class="shrink-0" href="#">
+<img alt="Asian Cart Logo" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuF8BvjPE4_ZSX1rwKr4TR5qi_qlmX_rjMxLY7plnj9slHvfLo6Ur7X7E2quTIT40LoHG7WYrKsW3-osBdjYndEpOe89BuLLv3fBDIGDknasXtpMiY7O-Lg7azfi3IrBb5phEuMsFvaYz3NUoNQo5pY7zZK1-Ji3FwMYV5ZW8BGy5p8mcVeep70i2PgfEeX4TAn0l1MCsBxXGGBmv5CnBj8XJAcBlD3iRmYNhan7qbY_h_89Kw5q9Osc2-KP4MQtDLJlWHgzF_FGR"/>
+</a>
+<div class="hidden md:flex flex-1 max-w-md relative">
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-full py-2 px-10 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Search products..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-6 mx-8">
+<a class="text-primary border-b-2 border-primary pb-1 font-semibold font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Categories</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Deals</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">New Arrivals</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all">
+<span class="material-symbols-outlined text-on-surface-variant">favorite</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all relative">
+<span class="material-symbols-outlined text-on-surface-variant">shopping_cart</span>
+<span class="absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="lg:hidden p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop md:px-margin-desktop space-y-stack-lg py-stack-lg">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center bg-surface-container-low rounded-2xl overflow-hidden min-h-[500px]">
+<div class="p-stack-lg space-y-6">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md inline-block">Exclusive Marketplace</span>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">Shop Smarter. Discover Products You’ll Love.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Experience the next generation of Asian-inspired retail. Premium quality, curated collections, and lightning-fast delivery.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-2xl font-headline-sm text-headline-sm hover:brightness-110 active:scale-95 transition-all shadow-md">Explore Our Curated Pantry</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-8 py-4 rounded-2xl font-headline-sm text-headline-sm hover:bg-outline-variant transition-all">View Deals</button>
+</div>
+</div>
+<div class="h-full min-h-[400px] relative">
+<img alt="Hero background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujb7P0FHHLdKWhs97GNMsugl4cPpNvZcykTQlYo4hhoX26qci01AycfUCMnkfaVORw3_kc1xTzyXBC-I844WkREwC40gVF4vbM_1z8CkUztNqhKYKfU_eDEeO4vLqXzKqazXN9gbyaj4s4s_GB3tl45Z3ji096vuXpuY-YQTd4K4q1382uMroip2RkmDq3jmFtpYGghcv9ukyks-DsZggcNukw0pWzCFq80bFv8nTWtnHy8Mhl6L8e1xRry"/>
+</div>
+</section>
+<!-- "Shop the Look" Pantry Grid -->
+<section class="space-y-stack-md">
+<div class="flex justify-between items-end">
+<h2 class="font-headline-lg text-headline-lg">Shop the Look: Your Dream Pantry</h2>
+<p class="text-on-surface-variant font-label-md hidden md:block">Hover over items to discover our selection</p>
+</div>
+<div class="relative rounded-2xl overflow-hidden group">
+<img alt="Pantry Organization" class="w-full h-auto max-h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujlZ0kSblKr55PIynbD3dDpBD-EgHaZCmgieEaMs6yF2w-XpIdy3X1zPgqJqaNxozYb5TrYKggybBfRSYwRkFpqCJV1ZUfmtbWCE3Tp8QJomRAQiVb1TdyA6bi_lXiXLxEk2DUr9Ao7H2nypEmQkI8OnK3_wzo7yrlkyEEmmlOSkelQVsVDDXAYOFiCVwdOfyhK5dFu6Fk5pX8lvTXjYEYGrXvU_8patDNhFArD2ZT5oauJ0Z-9kyuCRaws"/>
+<!-- Hotspots -->
+<div class="hotspot top-[45%] left-[12%]" style="z-index: 10;">
+<div class="hotspot-dot"></div>
+<div class="hotspot-card absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-48 bg-white p-3 rounded-xl shadow-xl">
+<p class="font-semibold text-sm">Red Lentils (Organic)</p>
+<p class="text-primary font-bold text-sm">$6.50</p>
+<button class="mt-2 w-full bg-primary text-on-primary py-1 rounded-lg text-xs">Add to Cart</button>
+</div>
+</div>
+<div class="hotspot top-[70%] left-[28%]" style="z-index: 10;">
+<div class="hotspot-dot"></div>
+<div class="hotspot-card absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-48 bg-white p-3 rounded-xl shadow-xl">
+<p class="font-semibold text-sm">Mixed Beans Mix</p>
+<p class="text-primary font-bold text-sm">$8.00</p>
+<button class="mt-2 w-full bg-primary text-on-primary py-1 rounded-lg text-xs">Add to Cart</button>
+</div>
+</div>
+<div class="hotspot top-[60%] left-[45%]" style="z-index: 10;">
+<div class="hotspot-dot"></div>
+<div class="hotspot-card absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-48 bg-white p-3 rounded-xl shadow-xl">
+<p class="font-semibold text-sm">Chickpeas (Kabuli)</p>
+<p class="text-primary font-bold text-sm">$5.25</p>
+<button class="mt-2 w-full bg-primary text-on-primary py-1 rounded-lg text-xs">Add to Cart</button>
+</div>
+</div>
+<div class="hotspot top-[50%] right-[20%]" style="z-index: 10;">
+<div class="hotspot-dot"></div>
+<div class="hotspot-card absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-48 bg-white p-3 rounded-xl shadow-xl">
+<p class="font-semibold text-sm">Premium Black Beluga</p>
+<p class="text-primary font-bold text-sm">$12.00</p>
+<button class="mt-2 w-full bg-primary text-on-primary py-1 rounded-lg text-xs">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Shop by Category -->
+<section class="space-y-stack-md">
+<div class="flex justify-between items-end">
+<h2 class="font-headline-lg text-headline-lg">Shop by Category</h2>
+<a class="text-primary font-label-md hover:underline" href="#">Explore All</a>
+</div>
+<div class="bento-grid">
+<div class="col-span-2 row-span-1 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Rice &amp; Flours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujb7P0FHHLdKWhs97GNMsugl4cPpNvZcykTQlYo4hhoX26qci01AycfUCMnkfaVORw3_kc1xTzyXBC-I844WkREwC40gVF4vbM_1z8CkUztNqhKYKfU_eDEeO4vLqXzKqazXN9gbyaj4s4s_GB3tl45Z3ji096vuXpuY-YQTd4K4q1382uMroip2RkmDq3jmFtpYGghcv9ukyks-DsZggcNukw0pWzCFq80bFv8nTWtnHy8Mhl6L8e1xRry"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Rice &amp; Flours</span>
+</div>
+</div>
+<div class="col-span-1 row-span-2 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Grains &amp; Pulses" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujlZ0kSblKr55PIynbD3dDpBD-EgHaZCmgieEaMs6yF2w-XpIdy3X1zPgqJqaNxozYb5TrYKggybBfRSYwRkFpqCJV1ZUfmtbWCE3Tp8QJomRAQiVb1TdyA6bi_lXiXLxEk2DUr9Ao7H2nypEmQkI8OnK3_wzo7yrlkyEEmmlOSkelQVsVDDXAYOFiCVwdOfyhK5dFu6Fk5pX8lvTXjYEYGrXvU_8patDNhFArD2ZT5oauJ0Z-9kyuCRaws"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Grains &amp; Pulses</span>
+</div>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Dry Fruits &amp; Nuts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujhHs8NpPSVRxyxmMM43fwmMWz2Q0pIgwcS036JsuiwAVXeSEaefKHzkzUvuzzv0F9xXNKHidGizVSZyJQ7KZKghLhZLBKGc8iKjQRTsNoxx-nWi6UWWuAe7SCzT_KcetFELo6Xl5zNWqfzP3ARmZQVlAoT_MDWUre_NP4Ut7X4XwBoXXhRrzTxxKRg-APY1wWN064hTqpibu1t4grD81TN9AteQ2aqhCI049cLMPl1BG6-usc2RxtwG59I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Dry Fruits &amp; Nuts</span>
+</div>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Perfumes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uhfoFV8AlZotaf4FwW8u4TTez39a2g9tVi35Si-STrXctkQwubEUyU3fq5xQNgliGoLBsbhJmsE7txowf_GUu_AopGTNGZalM-SCSSfMoV1HQv3uDr0HFr3iC1CIPZD7fBACU-PjEV1Q4RQ9YPXtWT3sP0rANvDhFkOEq35FzgVUEt3uakEx0aq-SzsWxWvSxliuMIweFr_Cig3x6Yu0cOcaEJsBl3w7Cl7-t3wXyfJ513RQ3Wc2hC-_rsj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Perfumes</span>
+</div>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Pantry Staples" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugvx4RT0kI8vzK5OPhm7oGNpYmV66peR-GKcTFAFfP-z4eEon-_zJmBnPTAK8hmkaLG7PgqysPNuN4yM0lb5mMoe2yUcJo7sXVJ8Z7MwjOJp5wbf82iCpbU2XoJSrBBP7EetCAkVxHUr6MMPvTxg2IAWWq7BSWhKp7iQr9m-ayOVlbO7qSyO5Er3911Lzf5_GPdc-ldz2bSQHi7DbnUrmqe_fYo2D6jCn0z20WL8w4tWXWzKzghavx-RsE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Pantry Staples</span>
+</div>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-2xl overflow-hidden group cursor-pointer relative">
+<img alt="Accessories" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxNB1AMeeQu-cTCWdrxu39RH8_k-dvsYzKf0IjfWbnosDKuy4GiNwxuvxOBfwv6ru_YesxPxcWIeqYXMHmtLyCLxsELXf2FwlUvEPX2h_miSTu_60z20BJc8iNKF5AdkBCvnVVfFfwfxQqzSWsBE0fzXb0l4-wX1q6k36TIlxP1JEoZBW73iqeIidqZTkt_o_0T-Ht0lxBrRjFx5SzEYYKxQVqdDy9o2rca6pFabbizTZQMV8OBdo7Zpcc7li1qRB2GyckKiRV9SHk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline-md text-headline-md">Accessories</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg">Featured Selection</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 (Rice) -->
+<div class="group bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img alt="Premium Basmati Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujb7P0FHHLdKWhs97GNMsugl4cPpNvZcykTQlYo4hhoX26qci01AycfUCMnkfaVORw3_kc1xTzyXBC-I844WkREwC40gVF4vbM_1z8CkUztNqhKYKfU_eDEeO4vLqXzKqazXN9gbyaj4s4s_GB3tl45Z3ji096vuXpuY-YQTd4K4q1382uMroip2RkmDq3jmFtpYGghcv9ukyks-DsZggcNukw0pWzCFq80bFv8nTWtnHy8Mhl6L8e1xRry"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 rounded-full uppercase tracking-wider w-fit">Best Seller</span>
+<span class="bg-surface/80 backdrop-blur-sm text-on-surface font-label-md text-[9px] px-2 py-1 rounded-full border border-outline-variant w-fit flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px] text-primary">eco</span> Sourced for Authenticity
+                        </span>
+</div>
+<div class="absolute bottom-4 inset-x-4 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-md shadow-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">bolt</span> Quick Add
+                        </button>
+</div>
+</div>
+<div class="p-4 space-y-3 flex-1 flex flex-col">
+<div class="space-y-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface">4.9</span>
+</div>
+<h3 class="font-body-md font-semibold text-on-surface truncate">Premium Basmati Rice</h3>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<span class="text-primary font-headline-sm">$12.00</span>
+<span class="text-on-surface-variant line-through text-label-md">$15.00</span>
+</div>
+<button class="text-primary font-label-md hover:underline decoration-2">Secure Your Stock</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 (Lentils) -->
+<div class="group bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img alt="Organic Red Lentils" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujlZ0kSblKr55PIynbD3dDpBD-EgHaZCmgieEaMs6yF2w-XpIdy3X1zPgqJqaNxozYb5TrYKggybBfRSYwRkFpqCJV1ZUfmtbWCE3Tp8QJomRAQiVb1TdyA6bi_lXiXLxEk2DUr9Ao7H2nypEmQkI8OnK3_wzo7yrlkyEEmmlOSkelQVsVDDXAYOFiCVwdOfyhK5dFu6Fk5pX8lvTXjYEYGrXvU_8patDNhFArD2ZT5oauJ0Z-9kyuCRaws"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface/80 backdrop-blur-sm text-on-surface font-label-md text-[9px] px-2 py-1 rounded-full border border-outline-variant w-fit flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px] text-primary">recycling</span> Plastic-Neutral Shipping
+                        </span>
+</div>
+<div class="absolute bottom-4 inset-x-4 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-md shadow-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">bolt</span> Quick Add
+                        </button>
+</div>
+</div>
+<div class="p-4 space-y-3 flex-1 flex flex-col">
+<div class="space-y-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface">4.8</span>
+</div>
+<h3 class="font-body-md font-semibold text-on-surface truncate">Organic Red Lentils</h3>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<span class="text-primary font-headline-sm">$5.50</span>
+</div>
+<button class="text-primary font-label-md hover:underline decoration-2">Secure Your Stock</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 (Cashews) -->
+<div class="group bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img alt="Jumbo Cashews" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujhHs8NpPSVRxyxmMM43fwmMWz2Q0pIgwcS036JsuiwAVXeSEaefKHzkzUvuzzv0F9xXNKHidGizVSZyJQ7KZKghLhZLBKGc8iKjQRTsNoxx-nWi6UWWuAe7SCzT_KcetFELo6Xl5zNWqfzP3ARmZQVlAoT_MDWUre_NP4Ut7X4XwBoXXhRrzTxxKRg-APY1wWN064hTqpibu1t4grD81TN9AteQ2aqhCI049cLMPl1BG6-usc2RxtwG59I"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 rounded-full uppercase tracking-wider w-fit">New</span>
+<span class="bg-surface/80 backdrop-blur-sm text-on-surface font-label-md text-[9px] px-2 py-1 rounded-full border border-outline-variant w-fit flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px] text-primary">eco</span> Sourced for Authenticity
+                        </span>
+</div>
+<button class="absolute bottom-4 right-4 bg-surface text-on-surface p-3 rounded-full shadow-lg translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="p-4 space-y-3 flex-1 flex flex-col">
+<div class="space-y-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface">5.0</span>
+</div>
+<h3 class="font-body-md font-semibold text-on-surface truncate">Jumbo Roasted Cashews</h3>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<span class="text-primary font-headline-sm">$18.00</span>
+</div>
+<button class="text-primary font-label-md hover:underline decoration-2">Shop Now</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 (Perfume) -->
+<div class="group bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img alt="Essence of Elegance Parfum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uhfoFV8AlZotaf4FwW8u4TTez39a2g9tVi35Si-STrXctkQwubEUyU3fq5xQNgliGoLBsbhJmsE7txowf_GUu_AopGTNGZalM-SCSSfMoV1HQv3uDr0HFr3iC1CIPZD7fBACU-PjEV1Q4RQ9YPXtWT3sP0rANvDhFkOEq35FzgVUEt3uakEx0aq-SzsWxWvSxliuMIweFr_Cig3x6Yu0cOcaEJsBl3w7Cl7-t3wXyfJ513RQ3Wc2hC-_rsj"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface/80 backdrop-blur-sm text-on-surface font-label-md text-[9px] px-2 py-1 rounded-full border border-outline-variant w-fit flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px] text-primary">recycling</span> Plastic-Neutral Shipping
+                        </span>
+</div>
+<button class="absolute bottom-4 right-4 bg-surface text-on-surface p-3 rounded-full shadow-lg translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+<div class="p-4 space-y-3 flex-1 flex flex-col">
+<div class="space-y-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface">4.7</span>
+</div>
+<h3 class="font-body-md font-semibold text-on-surface truncate">Essence of Elegance Parfum</h3>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<span class="text-primary font-headline-sm">$125.00</span>
+<span class="text-on-surface-variant line-through text-label-md">$150.00</span>
+</div>
+<button class="text-primary font-label-md hover:underline decoration-2">Experience the Scent</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fragrance Finder Mini-Quiz -->
+<section class="bg-inverse-surface text-surface rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 min-h-[400px]">
+<div class="lg:col-span-2 relative">
+<img alt="Perfume Quiz" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida/ADBb0uhfoFV8AlZotaf4FwW8u4TTez39a2g9tVi35Si-STrXctkQwubEUyU3fq5xQNgliGoLBsbhJmsE7txowf_GUu_AopGTNGZalM-SCSSfMoV1HQv3uDr0HFr3iC1CIPZD7fBACU-PjEV1Q4RQ9YPXtWT3sP0rANvDhFkOEq35FzgVUEt3uakEx0aq-SzsWxWvSxliuMIweFr_Cig3x6Yu0cOcaEJsBl3w7Cl7-t3wXyfJ513RQ3Wc2hC-_rsj"/>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-transparent to-transparent"></div>
+</div>
+<div class="lg:col-span-3 p-stack-lg flex flex-col justify-center space-y-6 relative z-10">
+<div class="space-y-2">
+<span class="text-primary-fixed font-label-md uppercase tracking-widest">Essence of Elegance</span>
+<h2 class="font-headline-lg text-headline-lg">Find Your Signature Scent</h2>
+<p class="text-surface-variant max-w-md">Our curated fragrance quiz helps you discover the notes that match your personality and style.</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4" id="quiz-container">
+<div class="space-y-4" id="quiz-step-1">
+<p class="font-semibold">Step 1: Which environment do you prefer?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<button class="text-left px-4 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all" onclick="nextStep(2)">Midnight Garden</button>
+<button class="text-left px-4 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all" onclick="nextStep(2)">Sunny Citrus Grove</button>
+</div>
+</div>
+<div class="hidden space-y-4" id="quiz-step-2">
+<p class="font-semibold">Step 2: What's your ideal intensity?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<button class="text-left px-4 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all" onclick="nextStep(3)">Subtle &amp; Fresh</button>
+<button class="text-left px-4 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all" onclick="nextStep(3)">Bold &amp; Mysterious</button>
+</div>
+</div>
+<div class="hidden space-y-4 text-center py-4" id="quiz-step-3">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">auto_awesome</span>
+<h3 class="text-xl font-bold">Your Match: Midnight Essence</h3>
+<p class="text-sm text-surface-variant">Deep oud with notes of sandalwood and jasmine.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md mt-4">Experience the Scent</button>
+</div>
+</div>
+<div class="flex items-center gap-4 text-xs text-surface-variant">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full bg-slate-400 border border-inverse-surface"></div>
+<div class="w-6 h-6 rounded-full bg-slate-500 border border-inverse-surface"></div>
+<div class="w-6 h-6 rounded-full bg-slate-600 border border-inverse-surface"></div>
+</div>
+<span>Over 1,200 people found their scent this week</span>
+</div>
+</div>
+</section>
+<!-- Why Shop With Us -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter py-stack-md border-y border-outline-variant">
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-2xl">
+<span class="material-symbols-outlined text-on-primary-container">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Secure Payments</h4>
+<p class="text-on-surface-variant font-body-md">100% protected transactions</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-2xl">
+<span class="material-symbols-outlined text-on-primary-container">local_shipping</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Fast Delivery</h4>
+<p class="text-on-surface-variant font-body-md">Next-day shipping available</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-2xl">
+<span class="material-symbols-outlined text-on-primary-container">high_quality</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Quality Products</h4>
+<p class="text-on-surface-variant font-body-md">Handpicked premium selection</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-2xl">
+<span class="material-symbols-outlined text-on-primary-container">assignment_return</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Easy Returns</h4>
+<p class="text-on-surface-variant font-body-md">30-day hassle-free policy</p>
+</div>
+</div>
+</section>
+<!-- Account Preview & Newsletter -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div class="bg-surface-container rounded-2xl p-stack-lg flex flex-col justify-between space-y-8">
+<div class="space-y-4">
+<h2 class="font-headline-lg text-headline-lg">Your Asian Cart Experience</h2>
+<p class="text-on-surface-variant">Join our community for a personalized shopping journey.</p>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-surface p-4 rounded-xl text-center space-y-2 hover:shadow-md transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">history</span>
+<p class="font-label-md text-xs">Order History</p>
+</div>
+<div class="bg-surface p-4 rounded-xl text-center space-y-2 hover:shadow-md transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<p class="font-label-md text-xs">Addresses</p>
+</div>
+<div class="bg-surface p-4 rounded-xl text-center space-y-2 hover:shadow-md transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">favorite_border</span>
+<p class="font-label-md text-xs">Wishlist</p>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline-sm hover:brightness-110 transition-all">Create Account</button>
+</div>
+<div class="bg-inverse-surface text-surface rounded-2xl p-stack-lg flex flex-col justify-center space-y-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="space-y-4 relative z-10">
+<h2 class="font-headline-lg text-headline-lg">Stay in the Loop</h2>
+<p class="text-surface/80">Subscribe to get early access to deals, new launches, and exclusive member content.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 relative z-10">
+<input class="flex-1 bg-surface/10 border border-surface/20 rounded-xl px-4 py-3 text-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md hover:brightness-110 transition-all">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Live "Trending Near You" Feed -->
+<div class="fixed bottom-6 left-6 z-[100] hidden" id="live-toast">
+<div class="bg-white border border-outline-variant shadow-2xl rounded-2xl p-4 flex items-center gap-4 max-w-sm toast-slide-in">
+<div class="w-12 h-12 rounded-xl bg-surface-container overflow-hidden shrink-0">
+<img alt="Trending product" class="w-full h-full object-cover" id="toast-img" src="https://lh3.googleusercontent.com/aida/ADBb0ujb7P0FHHLdKWhs97GNMsugl4cPpNvZcykTQlYo4hhoX26qci01AycfUCMnkfaVORw3_kc1xTzyXBC-I844WkREwC40gVF4vbM_1z8CkUztNqhKYKfU_eDEeO4vLqXzKqazXN9gbyaj4s4s_GB3tl45Z3ji096vuXpuY-YQTd4K4q1382uMroip2RkmDq3jmFtpYGghcv9ukyks-DsZggcNukw0pWzCFq80bFv8nTWtnHy8Mhl6L8e1xRry"/>
+</div>
+<div class="flex-1">
+<p class="text-xs text-on-surface-variant font-medium">Trending Near You</p>
+<p class="text-sm font-semibold" id="toast-text">Someone in London just ordered Premium Basmati Rice.</p>
+<p class="text-[10px] text-primary font-bold mt-1">Just now</p>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('live-toast').classList.add('hidden')">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-surface py-stack-lg border-t border-outline-variant mt-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<img alt="Asian Cart Logo" class="h-8 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuF8BvjPE4_ZSX1rwKr4TR5qi_qlmX_rjMxLY7plnj9slHvfLo6Ur7X7E2quTIT40LoHG7WYrKsW3-osBdjYndEpOe89BuLLv3fBDIGDknasXtpMiY7O-Lg7azfi3IrBb5phEuMsFvaYz3NUoNQo5pY7zZK1-Ji3FwMYV5ZW8BGy5p8mcVeep70i2PgfEeX4TAn0l1MCsBxXGGBmv5CnBj8XJAcBlD3iRmYNhan7qbY_h_89Kw5q9Osc2-KP4MQtDLJlWHgzF_FGR"/>
+<p class="text-surface-variant text-body-md pr-8">Bringing the finest selections to your doorstep with efficiency and style. Your premium gateway to global products.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-primary-fixed">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">About Us</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Careers</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Press</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-primary-fixed">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Shipping Policy</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Returns</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">Terms of Service</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-all hover:underline" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-primary-fixed">Newsletter</h4>
+<p class="text-surface-variant text-body-md">Get 10% off your first order!</p>
+<div class="flex gap-2">
+<button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined text-on-primary">social_leaderboard</span></button>
+<button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined text-on-primary">photo_camera</span></button>
+<button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined text-on-primary">alternate_email</span></button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-stack-lg pt-8 border-t border-surface/10 text-center">
+<p class="text-surface-variant font-label-md">© 2024 Asian Cart. All rights reserved.</p>
+</div>
+</footer>
+<script>
+    const header = document.getElementById('topAppBar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('py-2', 'bg-surface/90', 'backdrop-blur-md');
+            header.classList.remove('py-4', 'bg-surface');
+        } else {
+            header.classList.add('py-4', 'bg-surface');
+            header.classList.remove('py-2', 'bg-surface/90', 'backdrop-blur-md');
+        }
+    });
+
+    // Quiz logic
+    function nextStep(step) {
+        document.getElementById('quiz-step-1').classList.add('hidden');
+        document.getElementById('quiz-step-2').classList.add('hidden');
+        document.getElementById('quiz-step-3').classList.add('hidden');
+        document.getElementById('quiz-step-' + step).classList.remove('hidden');
+    }
+
+    // Live Toast logic
+    const toastData = [
+        { text: "Someone in Manchester just ordered Premium Basmati Rice.", img: "https://lh3.googleusercontent.com/aida/ADBb0ujb7P0FHHLdKWhs97GNMsugl4cPpNvZcykTQlYo4hhoX26qci01AycfUCMnkfaVORw3_kc1xTzyXBC-I844WkREwC40gVF4vbM_1z8CkUztNqhKYKfU_eDEeO4vLqXzKqazXN9gbyaj4s4s_GB3tl45Z3ji096vuXpuY-YQTd4K4q1382uMroip2RkmDq3jmFtpYGghcv9ukyks-DsZggcNukw0pWzCFq80bFv8nTWtnHy8Mhl6L8e1xRry" },
+        { text: "A shopper in Berlin added Organic Red Lentils to their pantry.", img: "https://lh3.googleusercontent.com/aida/ADBb0ujlZ0kSblKr55PIynbD3dDpBD-EgHaZCmgieEaMs6yF2w-XpIdy3X1zPgqJqaNxozYb5TrYKggybBfRSYwRkFpqCJV1ZUfmtbWCE3Tp8QJomRAQiVb1TdyA6bi_lXiXLxEk2DUr9Ao7H2nypEmQkI8OnK3_wzo7yrlkyEEmmlOSkelQVsVDDXAYOFiCVwdOfyhK5dFu6Fk5pX8lvTXjYEYGrXvU_8patDNhFArD2ZT5oauJ0Z-9kyuCRaws" },
+        { text: "Someone in Paris just discovered Essence of Elegance Parfum.", img: "https://lh3.googleusercontent.com/aida/ADBb0uhfoFV8AlZotaf4FwW8u4TTez39a2g9tVi35Si-STrXctkQwubEUyU3fq5xQNgliGoLBsbhJmsE7txowf_GUu_AopGTNGZalM-SCSSfMoV1HQv3uDr0HFr3iC1CIPZD7fBACU-PjEV1Q4RQ9YPXtWT3sP0rANvDhFkOEq35FzgVUEt3uakEx0aq-SzsWxWvSxliuMIweFr_Cig3x6Yu0cOcaEJsBl3w7Cl7-t3wXyfJ513RQ3Wc2hC-_rsj" }
+    ];
+
+    function showToast() {
+        const toast = document.getElementById('live-toast');
+        const textElem = document.getElementById('toast-text');
+        const imgElem = document.getElementById('toast-img');
+        const random = toastData[Math.floor(Math.random() * toastData.length)];
+        
+        textElem.innerText = random.text;
+        imgElem.src = random.img;
+        
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+            toast.classList.add('hidden');
+        }, 5000);
+    }
+
+    setTimeout(showToast, 3000);
+    setInterval(showToast, 15000);
+
+    document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            if (this.innerText.includes('Quick Add') || this.innerText === 'Secure Your Stock' || this.innerText === 'Add to Cart') {
+                this.classList.add('scale-95');
+                const originalText = this.innerHTML;
+                this.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Added';
+                setTimeout(() => {
+                    this.classList.remove('scale-95');
+                    this.innerHTML = originalText;
+                }, 1500);
+            }
+        });
+    });
+</script>
+</body></html>

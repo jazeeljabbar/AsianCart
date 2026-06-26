@@ -1,0 +1,122 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "i48WnyMGyshirmzlQWQH2"
+uri = "file://src/assets/images/hero.png"
+type = "image"
+title = "Hero image of Indian pantry ingredients"
+
+[[generated]]
+id = "ZQ-fENvk_DPvjl_xqE76X"
+uri = "file://src/assets/images/cat-rice.png"
+type = "image"
+title = "Rice and flour category"
+
+[[generated]]
+id = "hNa4ezTBsAw3s227ag02R"
+uri = "file://src/assets/images/cat-pulses.png"
+type = "image"
+title = "Grains and pulses category"
+
+[[generated]]
+id = "oDRxHBeEjon4mypmlAooo"
+uri = "file://src/assets/images/cat-spices.png"
+type = "image"
+title = "Spices category"
+
+[[generated]]
+id = "6AtmA2l2D0LquEOwCaFNo"
+uri = "file://src/assets/images/cat-dryfruits.png"
+type = "image"
+title = "Dry fruits category"
+
+[[generated]]
+id = "rn8iZ_mFaHNFO_X1noEL6"
+uri = "file://src/assets/images/cat-perfumes.png"
+type = "image"
+title = "Attar perfumes category"
+
+[[generated]]
+id = "nPbXm2cjRuKRul4nxbhpn"
+uri = "file://src/assets/images/banner-staples.png"
+type = "image"
+title = "Deals banner staples"
+
+[[generated]]
+id = "mRlBC6T-qz963xurV-rcJ"
+uri = "file://src/assets/images/banner-dryfruits.png"
+type = "image"
+title = "Deals banner dry fruits"
+
+[[generated]]
+id = "vo9w8h6Q2gsmrnHIvDrpu"
+uri = "file://src/assets/images/life-dal.png"
+type = "image"
+title = "Dal and rice bowl"
+
+[[generated]]
+id = "vxg3g8c6fwYKjRnppgz4H"
+uri = "file://src/assets/images/life-festive.png"
+type = "image"
+title = "Festive dry fruit platter"
+
+[[generated]]
+id = "Mpwb5Ae9OWJAk0D98HKos"
+uri = "file://artifacts/asian-cart/public/images/cat-rice.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "CFdj7806s6D-RdpMeA8Vd"
+uri = "file://artifacts/asian-cart/public/images/cat-pulses.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "vOJG_yCPMX4XWMHPbKMzt"
+uri = "file://artifacts/asian-cart/public/images/hero.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "UNgF2lm_P6517rbPPiIFD"
+uri = "file://artifacts/asian-cart/public/images/cat-perfumes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "0kCYQzUSPhsPk1PP2-6Y8"
+uri = "file://artifacts/asian-cart/public/images/cat-spices.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "3neguNMCTkmJ1ZSZxxfrw"
+uri = "file://artifacts/asian-cart/public/images/cat-dryfruits.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "1EcXGKx5juPq8QeCgctpX"
+uri = "file://artifacts/asian-cart/public/images/banner-dryfruits.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "JUcc8AdtYSynW2PfkpXVg"
+uri = "file://artifacts/asian-cart/public/images/banner-staples.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "OIEFbDKnSz50TR1oSOE2r"
+uri = "file://artifacts/asian-cart/public/images/life-dal.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "yMb3qY9RbNOOhpe1RdG-2"
+uri = "file://artifacts/asian-cart/public/images/life-festive.png"
+type = "image"
+title = "generated_image"

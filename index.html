@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asian Cart | Design Gallery — Choose Your Mockup</title>
+  <meta name="description" content="Explore 3 unique homepage design mockups for Asian Cart, a premium Indian grocery and trader marketplace. Pick your favorite design direction."/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest': '#003C32',
+            'forest-deep': '#002822',
+            'lime': '#9AD62A',
+            'lime-soft': '#B8E85A',
+            'fresh': '#57BF3C',
+            'cream': '#FAF7F2',
+            'sand': '#EDE5D4',
+            'charcoal': '#1D2B25',
+          },
+          fontFamily: {
+            'display': ['Outfit', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Animated gradient background */
+    .hero-gradient {
+      background: 
+        radial-gradient(ellipse 80% 50% at 20% 80%, rgba(154, 214, 42, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(87, 191, 60, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 100% 80% at 50% 0%, rgba(0, 60, 50, 0.04) 0%, transparent 70%),
+        linear-gradient(180deg, #FFFFFF 0%, #FAF7F2 100%);
+    }
+
+    /* Card hover effects */
+    .design-card {
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+    .design-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 
+        0 32px 64px -16px rgba(0, 60, 50, 0.15),
+        0 16px 32px -8px rgba(0, 60, 50, 0.1);
+    }
+    .design-card:hover .card-image {
+      transform: scale(1.05);
+    }
+    .design-card:hover .card-overlay {
+      opacity: 1;
+    }
+    .design-card:hover .card-cta {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Image zoom */
+    .card-image {
+      transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .card-overlay {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .card-cta {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: all 0.4s ease 0.1s;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+    .float-delay-1 {
+      animation-delay: -2s;
+    }
+    .float-delay-2 {
+      animation-delay: -4s;
+    }
+
+    /* Subtle pulse on badge */
+    @keyframes badge-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(154, 214, 42, 0.4); }
+      50% { box-shadow: 0 0 0 8px rgba(154, 214, 42, 0); }
+    }
+    .badge-pulse {
+      animation: badge-pulse 2s ease-in-out infinite;
+    }
+
+    /* Fade in on scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Logo spin on hover */
+    .logo-container:hover .logo-icon {
+      transform: rotate(10deg) scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .logo-icon {
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FAF7F2; }
+    ::-webkit-scrollbar-thumb { background: #003C32; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #57BF3C; }
+  </style>
+</head>
+<body class="bg-white text-charcoal min-h-screen">
+
+  <!-- Subtle top accent line -->
+  <div class="h-1 w-full bg-gradient-to-r from-forest via-fresh to-lime"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/80">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="logo-container flex items-center gap-3 group">
+        <img src="mockups/logo.png" alt="Asian Cart Logo" class="h-12 logo-icon"/>
+      </a>
+      
+      <!-- Nav hint -->
+      <div class="hidden md:flex items-center gap-2 text-sm text-gray-400 font-medium">
+        <span class="material-symbols-outlined text-fresh text-lg">palette</span>
+        Design Showcase Gallery
+      </div>
+
+      <!-- Status -->
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:flex items-center gap-2 bg-cream text-forest text-xs font-semibold px-4 py-2 rounded-full border border-gray-200/50">
+          <span class="w-2 h-2 rounded-full bg-fresh animate-pulse"></span>
+          3 Designs Ready
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-16 pb-24 lg:pt-24 lg:pb-36 relative overflow-hidden">
+      <!-- Decorative elements -->
+      <div class="absolute top-20 right-10 w-64 h-64 bg-lime/5 rounded-full blur-3xl float-animation"></div>
+      <div class="absolute bottom-10 left-10 w-48 h-48 bg-fresh/5 rounded-full blur-3xl float-animation float-delay-1"></div>
+      <div class="absolute top-1/2 left-1/3 w-32 h-32 bg-forest/3 rounded-full blur-2xl float-animation float-delay-2"></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 text-center relative z-10">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2.5 bg-white shadow-sm border border-gray-200/60 rounded-full px-5 py-2.5 mb-8">
+          <span class="w-2.5 h-2.5 rounded-full bg-lime badge-pulse"></span>
+          <span class="text-sm font-semibold text-forest tracking-wide uppercase">Mockup Gallery</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-forest leading-[1.05] tracking-tight mb-6">
+          Asian Cart<br/>
+          <span class="bg-gradient-to-r from-fresh to-lime bg-clip-text text-transparent">Design Showcase</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="font-body text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed mb-3">
+          Explore three unique homepage design directions for Asian Cart's e-commerce platform.
+          Click any design to view the full mockup.
+        </p>
+        
+        <p class="text-sm text-gray-400 font-medium">
+          Each design opens in a new tab for easy comparison
+        </p>
+
+        <!-- Scroll indicator -->
+        <div class="mt-12 flex flex-col items-center gap-2 text-gray-300">
+          <span class="text-xs font-medium tracking-widest uppercase">Scroll to explore</span>
+          <span class="material-symbols-outlined text-2xl animate-bounce">expand_more</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Cards Section -->
+    <section class="py-20 lg:py-28 bg-cream" id="designs">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        
+        <!-- Section header -->
+        <div class="text-center mb-16 fade-in">
+          <span class="text-fresh font-bold text-xs uppercase tracking-[0.2em] block mb-3">Three Directions</span>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-forest mb-4">Pick a Design</h2>
+          <p class="text-gray-500 max-w-lg mx-auto">Each mockup represents a distinct visual approach — from premium boutique to bold wholesale marketplace.</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+          <!-- Design 1 Card -->
+          <a href="mockups/design-1/index.html" target="_blank" rel="noopener" class="design-card bg-white rounded-4xl overflow-hidden shadow-lg border border-gray-100/80 flex flex-col group cursor-pointer fade-in" id="card-design-1">
+            <!-- Image Container -->
+            <div class="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-forest to-forest-deep">
+              <img src="mockups/design-1/hero-grocery.png" alt="Design 1 — Premium Marketplace" class="card-image w-full h-full object-cover object-top"/>
+              <!-- Hover overlay -->
+              <div class="card-overlay absolute inset-0 bg-forest/70 backdrop-blur-sm flex items-center justify-center">
+                <div class="card-cta flex items-center gap-3 bg-white text-forest px-6 py-3 rounded-full font-semibold shadow-xl">
+                  <span>View Full Design</span>
+                  <span class="material-symbols-outlined text-lg">open_in_new</span>
+                </div>
+              </div>
+              <!-- Badge -->
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-forest text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                Design 01
+              </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <h3 class="font-display text-xl font-bold text-forest group-hover:text-fresh transition-colors">Premium Marketplace</h3>
+                <span class="material-symbols-outlined text-gray-300 group-hover:text-lime transition-colors text-xl mt-0.5">arrow_outward</span>
+              </div>
+              <p class="text-sm text-gray-500 leading-relaxed flex-1">
+                Modern, premium e-commerce with deep forest green & lime accents. Clean layouts, elegant product cards, and a boutique shopping feel.
+              </p>
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-2 mt-5 pt-5 border-t border-gray-100">
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Premium</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Spacious</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Boutique</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Design 2 Card -->
+          <a href="mockups/design-2/index.html" target="_blank" rel="noopener" class="design-card bg-white rounded-4xl overflow-hidden shadow-lg border border-gray-100/80 flex flex-col group cursor-pointer fade-in" id="card-design-2" style="transition-delay: 0.15s">
+            <!-- Image Container -->
+            <div class="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-amber-50 to-sand">
+              <img src="mockups/design-2/images/hero.png" alt="Design 2 — Fresh & Warm" class="card-image w-full h-full object-cover object-top"/>
+              <div class="card-overlay absolute inset-0 bg-forest/70 backdrop-blur-sm flex items-center justify-center">
+                <div class="card-cta flex items-center gap-3 bg-white text-forest px-6 py-3 rounded-full font-semibold shadow-xl">
+                  <span>View Full Design</span>
+                  <span class="material-symbols-outlined text-lg">open_in_new</span>
+                </div>
+              </div>
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-forest text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                Design 02
+              </div>
+            </div>
+            
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <h3 class="font-display text-xl font-bold text-forest group-hover:text-fresh transition-colors">Fresh & Warm</h3>
+                <span class="material-symbols-outlined text-gray-300 group-hover:text-lime transition-colors text-xl mt-0.5">arrow_outward</span>
+              </div>
+              <p class="text-sm text-gray-500 leading-relaxed flex-1">
+                Organic farm-to-table aesthetic with cream & beige tones. Editorial-style category cards, kitchen inspiration, and a warm natural feel.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-5 pt-5 border-t border-gray-100">
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Organic</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Warm</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Editorial</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Design 3 Card -->
+          <a href="mockups/design-3/index.html" target="_blank" rel="noopener" class="design-card bg-white rounded-4xl overflow-hidden shadow-lg border border-gray-100/80 flex flex-col group cursor-pointer fade-in md:col-span-2 lg:col-span-1" id="card-design-3" style="transition-delay: 0.3s">
+            <div class="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-900 to-forest-deep">
+              <img src="mockups/design-3/hero.png" alt="Design 3 — Bold Marketplace" class="card-image w-full h-full object-cover object-top"/>
+              <div class="card-overlay absolute inset-0 bg-forest/70 backdrop-blur-sm flex items-center justify-center">
+                <div class="card-cta flex items-center gap-3 bg-white text-forest px-6 py-3 rounded-full font-semibold shadow-xl">
+                  <span>View Full Design</span>
+                  <span class="material-symbols-outlined text-lg">open_in_new</span>
+                </div>
+              </div>
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-forest text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                Design 03
+              </div>
+            </div>
+            
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <h3 class="font-display text-xl font-bold text-forest group-hover:text-fresh transition-colors">Bold Marketplace</h3>
+                <span class="material-symbols-outlined text-gray-300 group-hover:text-lime transition-colors text-xl mt-0.5">arrow_outward</span>
+              </div>
+              <p class="text-sm text-gray-500 leading-relaxed flex-1">
+                High-conversion B2B marketplace with bold typography, bulk pricing, and a wholesale-focused design. Efficient and business-driven.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-5 pt-5 border-t border-gray-100">
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">B2B</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Bold</span>
+                <span class="text-[11px] font-semibold text-forest bg-cream px-3 py-1 rounded-full">Wholesale</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Strip -->
+    <section class="bg-forest text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="text-center mb-12 fade-in">
+          <h2 class="font-display text-2xl md:text-3xl font-bold mb-3">Design at a Glance</h2>
+          <p class="text-white/60 text-sm">Quick comparison of all three design directions</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+          <!-- Design 1 -->
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-forest to-forest-deep flex items-center justify-center mb-5 shadow-lg">
+              <span class="material-symbols-outlined text-lime text-xl">storefront</span>
+            </div>
+            <h3 class="font-display text-lg font-bold mb-3">Design 1 — Premium</h3>
+            <ul class="space-y-2.5 text-sm text-white/70">
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Plus Jakarta Sans typography</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Deep green & lime palette</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Animated hero section</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Testimonials & trust strips</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Newsletter & bulk CTA</li>
+            </ul>
+          </div>
+
+          <!-- Design 2 -->
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-100 to-sand flex items-center justify-center mb-5 shadow-lg">
+              <span class="material-symbols-outlined text-forest text-xl">eco</span>
+            </div>
+            <h3 class="font-display text-lg font-bold mb-3">Design 2 — Warm</h3>
+            <ul class="space-y-2.5 text-sm text-white/70">
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Cream & beige warm tones</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Farm-to-table aesthetic</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Editorial category cards</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Kitchen inspiration section</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Pincode delivery selector</li>
+            </ul>
+          </div>
+
+          <!-- Design 3 -->
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center mb-5 shadow-lg">
+              <span class="material-symbols-outlined text-lime text-xl">rocket_launch</span>
+            </div>
+            <h3 class="font-display text-lg font-bold mb-3">Design 3 — Bold</h3>
+            <ul class="space-y-2.5 text-sm text-white/70">
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> High-conversion B2B layout</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Scrollable deals rail</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Bulk quote form</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Business statistics</li>
+              <li class="flex items-center gap-2"><span class="text-lime text-xs">●</span> Reviews carousel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-forest-deep text-white/50 py-10 text-center">
+    <div class="max-w-7xl mx-auto px-6">
+      <img src="mockups/logo.png" alt="Asian Cart" class="h-10 mx-auto mb-4 brightness-0 invert opacity-60"/>
+      <p class="text-sm font-medium">Asian Cart Design Gallery — 3 Mockup Directions</p>
+      <p class="text-xs mt-2">© 2025 Asian Cart. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Smooth parallax effect on hero decorative elements
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const floaters = document.querySelectorAll('.float-animation');
+      floaters.forEach((el, i) => {
+        const speed = 0.05 + (i * 0.02);
+        el.style.transform = `translateY(${-scrolled * speed}px)`;
+      });
+    });
+  </script>
+</body>
+</html>
