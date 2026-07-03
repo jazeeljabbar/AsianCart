@@ -1,0 +1,376 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@asiancart.in",
+      "passwordHash": "admin123",
+      "role": "admin",
+      "name": "Admin User",
+      "phone": "+91-9876543210",
+      "createdAt": "2025-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "email": "user@asiancart.in",
+      "passwordHash": "user123",
+      "role": "customer",
+      "name": "user",
+      "phone": "+91-9876543211",
+      "createdAt": "2025-01-02T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Premium Basmati Rice",
+      "slug": "premium-basmati-rice",
+      "category": "Rice & Flour",
+      "weight": "5 kg",
+      "price": 620,
+      "originalPrice": 750,
+      "discount": 17,
+      "rating": 4.8,
+      "reviews": 234,
+      "stock": 150,
+      "imageUrl": "/prod-basmati.png",
+      "description": "Long-grain aged basmati rice, perfect for biryanis and pulaos. Sourced from the foothills of the Himalayas.",
+      "isFeatured": true,
+      "badge": "Best Seller"
+    },
+    {
+      "id": "2",
+      "name": "Kerala Matta Rice",
+      "slug": "kerala-matta-rice",
+      "category": "Rice & Flour",
+      "weight": "5 kg",
+      "price": 449,
+      "originalPrice": 520,
+      "discount": 14,
+      "rating": 4.6,
+      "reviews": 187,
+      "stock": 95,
+      "imageUrl": "/prod-matta.png",
+      "description": "Traditional red rice from Kerala, rich in fibre and nutrients. A staple in South Indian homes.",
+      "isFeatured": true,
+      "badge": "Authentic"
+    },
+    {
+      "id": "3",
+      "name": "Whole Wheat Flour",
+      "slug": "whole-wheat-flour",
+      "category": "Rice & Flour",
+      "weight": "5 kg",
+      "price": 310,
+      "originalPrice": 380,
+      "discount": 18,
+      "rating": 4.7,
+      "reviews": 312,
+      "stock": 200,
+      "imageUrl": "/prod-wheat.png",
+      "description": "Stone-ground whole wheat flour for soft rotis and parathas. No preservatives added.",
+      "isFeatured": true,
+      "badge": "Organic"
+    },
+    {
+      "id": "4",
+      "name": "Toor Dal",
+      "slug": "toor-dal",
+      "category": "Grains & Pulses",
+      "weight": "1 kg",
+      "price": 175,
+      "originalPrice": 210,
+      "discount": 17,
+      "rating": 4.5,
+      "reviews": 445,
+      "stock": 300,
+      "imageUrl": "/prod-toor.png",
+      "description": "Split pigeon peas, the base of every Indian home's dal. Sourced from Maharashtra farms.",
+      "isFeatured": true,
+      "badge": "Top Pick"
+    },
+    {
+      "id": "5",
+      "name": "Black Pepper",
+      "slug": "black-pepper",
+      "category": "Pantry Staples",
+      "weight": "200 g",
+      "price": 145,
+      "originalPrice": 180,
+      "discount": 19,
+      "rating": 4.9,
+      "reviews": 521,
+      "stock": 180,
+      "imageUrl": "/prod-pepper.png",
+      "description": "Bold, pungent Malabar black pepper. The king of spices, sourced directly from Kerala.",
+      "isFeatured": true,
+      "badge": "Premium"
+    },
+    {
+      "id": "6",
+      "name": "Cashew Nuts W240",
+      "slug": "cashew-nuts-w240",
+      "category": "Dry Fruits & Nuts",
+      "weight": "500 g",
+      "price": 540,
+      "originalPrice": 680,
+      "discount": 21,
+      "rating": 4.8,
+      "reviews": 378,
+      "stock": 120,
+      "imageUrl": "/prod-cashew.png",
+      "description": "Whole W240 grade cashews, creamy and rich. Ideal for cooking and snacking.",
+      "isFeatured": true,
+      "badge": "Export Grade"
+    },
+    {
+      "id": "7",
+      "name": "Premium Almonds",
+      "slug": "premium-almonds",
+      "category": "Dry Fruits & Nuts",
+      "weight": "500 g",
+      "price": 499,
+      "originalPrice": 620,
+      "discount": 20,
+      "rating": 4.7,
+      "reviews": 289,
+      "stock": 110,
+      "imageUrl": "/prod-almond.png",
+      "description": "California almonds, crunchy and fresh. Packed with nutrition and natural goodness.",
+      "isFeatured": false,
+      "badge": null
+    },
+    {
+      "id": "8",
+      "name": "Royal Oud Attar",
+      "slug": "royal-oud-attar",
+      "category": "Perfumes",
+      "weight": "12 ml",
+      "price": 699,
+      "originalPrice": 850,
+      "discount": 18,
+      "rating": 4.9,
+      "reviews": 156,
+      "stock": 60,
+      "imageUrl": "/prod-attar.png",
+      "description": "Traditional Oud-based attar, long-lasting and alcohol-free. A touch of the Arabian heritage.",
+      "isFeatured": true,
+      "badge": "Exclusive"
+    },
+    {
+      "name": "Maggi",
+      "category": "Daily Essentials",
+      "weight": "280 g",
+      "price": 49,
+      "originalPrice": 55,
+      "discount": 11,
+      "stock": 100,
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAEsASwDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAMFAQQGAgf/xABCEAABAwIEAwMJBQYGAgMAAAABAAIDBBEFEiExE0FRBmGBFBUiMlNxkaGxIzM0UnIkQkNi0fAHFjWSwfEl4WSy0v/EABsBAQACAwEBAAAAAAAAAAAAAAADBAECBQYH/8QAOREAAgEDAQQFCQcFAQAAAAAAAAECAwQRIQUSMUEGE1FhcRQiMjORobHB8BUjNEJygeEkUqLR8WL/2gAMAwEAAhEDEQA/APsyIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCxcKOp/DS/oP0VBchmpK420tqKxlGO7nPfj5E1Olvp6nSIq+kxGN4Eczg145nYreD2kXBBHvXSoXFOvBSgyOUXF4Z6RYuEuFNk1MosZh1CZgmUDKLFwmYJlAyixcJcdUygZRYuOqXCZQMosXCXCZQMosXCXCZQMosXS6ZQMosXS6ZQMosXCXTKBlFi4S4WcgyixmS6ZBlFi6XWMgyixdLrOQZRYul1jKBlF5dI1gu5wA7yquvrRIMkROXmeqpXl9StKblJ5fJc2bwg5vCLZFR0Bca2P0j8e5Xi12ffK9pOoo4w8GakNx4Iqj8PJ+g/RULxaM+5X1TpTSn+Q/RUF80Z9y850k9bTfd8yxbcGZijErbE6jZeXwuabEL3DpqpnSFwsVwJVoOOvFFnVM0+H3II+5bNh0WHj0HW3soOubM5I2RyPF2sJHVZdBNb1APe5WDtDaw0Xm9tgPguu6FGL1yRb7K400p5M/wByeTP5lnxXuux3DcOJFVVwxvG7L3d/tGqp6jt/hcTrRQzzfzNjAHzN/kpYW8ZehFv2k9OlXqawi2WhpnX9ZoWPJ3e0b/tKoXf4iwX0w55He8D/AIRv+ING77zD5h+ktP1ssztKqWYw+vaWPIrrnD4F/wAA/mHwWRTk81WUvbDBqlzWuldA53KVhAHiLj5q5inimjEkL2SMds5hBB8QufUnOl6yGP2ZXnTqQ0msED6Z7Wlw1tyKzFBxo2yNNw4XUtQ48F1lUdlKuSfCY3PdckBbRrUpUnNrgyNtlr5G5Z8id1Cm4h6pxD1WnlVDsZjMiLyJ3cseRO6hTcVycV3VZ8qodjHnEPkLuqjfCyOURveASL67La4p6rmcW7SxzVfkWFtFZUsGaT0miNoBB9Jx7xbfn12tW0qVeW7GLNoxnJl0YHyWMJDmgkOI56X0UcscsbQXCOPTUySBVsNPjNSxk2L1r4W2LnwQSBgb/KbA33A3vvZaVZRY8a/ybD+DBTmnzumERLXC7soI1JIFtxrp3BdKnbUG8N/XiYlLd7y6BLXkuq6cgk6XPgvDS9lw2eGTUklz7HoPoD4lRQMacHhlfCxsjSC4vpuHmFtTZ4GXl8FtSAS1Rjlc+J7nZwGGxcByu0el3h191q6dum0N/uPcIklmyiM5Ds4ODh4keCkiY17i0uaHA2te6oGUzYneTQMqfKrGTOWvY2zXm5uTY2GlgRcXKhrsTxGnq/TZHV0wi4mRhc2UG7mus5oy6W9VxubadBJKwg470f8ARlPelhfI6tsDXND2yAgi4I1BWTCPz/JVuAYvRYrR56OpMoBuY36OjB2BF/mrXcrz9xU6mo4OOq8Q4uLwzXcIATeoYPFRPmpo/WqGj36LRqb8d4Nw0u2B7+q52esrafEZ448TblDPuTDqHOkNnXy6ixaOfpZuhXpKWyqc4ptshdTB1vnCmb/F8VsU1S2pJbHrYA77j+wuSwrE/L66b7R7gGvAAy5AA/LfRxudLX2OV1ud+hwtzTUyZObdSBvY/wDtV77ZtGhRlUWcrvMxnvFmWZdXWBUJ9J3RTEKK32oXmesTTUVglRs4fpWR/wB8irtUdCf2+Me/6FXi9r0c/Cy/V8kUrj0iKq/Cy/oP0VA37vwV9VfhZf0H6Khb934Kh0k9ZTJLbgz1GNF7UL5mwsBdfVwaLC+pUy8nOL4ss5CO9U+5EWiBtvN3XXz7tR2sqpamajoZHQwwuLXvYbOkI315D3LvGOLoYyebB9F8y7R4BV4bWzSiJz6SRxcyRuoaDyPSy9ZadXKs9/jyLuzIUpVfvOPIxV9l8QpKqmgcY5fKn5Q6Mkhp77jpr7gei91HZWogqXQNq4X5ImyE2cSQSRo1oLjtyClf2vnMlQ5lMAJYwGAvvw3gZc403sf/AGvH+aHui4ElG10Jp44XNEha45L2OYajfZWU77TKXu+tOB1k77TT4fWhG7stWMaZJJoWQCEzGY59GjcZS0OuOllJSdlpK6OKenr4JIZC4Z2tdcW30IBPuSLtRIwRRmkAjhjfGwRzPa4B1tcxve1uYIR3amUupgKdz2QSF54s5c9xIt6wDbb8gjd79Y7/AH8A3ffWPrJJhvZqmruHOyudLAZeG4GExnYm+p9y0MPxWpwLE3mJ7jE2Qtkivo8A/XvW3/mascGQ0MU2fiZyZZXTucbaAXGgWzhPZaqrK4VOKAQMe4yGIkB8hvc6ch8/qtZTcIy8qfmvgtM+4w5OEZO5ej4LTPuO3mA4LlQ9jxkwwR/k0V/L9073Kj7NDKaqP8szx8yvL0/UT8V8zzj5F8iIqZkIi16+pFHQVFSf4UZct6cHOaguL0CWXg53tBjAqJpaCOofT0kQ/ap4xd7jsI2Abnr0HgpaeCDBIPJ45iBdjbzDRjbb6b3OveeirOzFbhdLTNqpqlhrHuL3vldYxOLRmaLgHNoLq5llbDSRs4MNQyTQvAL42ne+pt058+9eyjShQSoxWi97JJSSlurVL3956jqmS0skAdFPJmzFoOUyDclQSYtARlqC8QysEbn5iQw66FttNTf4e5bFM6miNUYoBCwSF0wa43D7+rbpoDoANT41VfhkcFYeHO11mlvCEhNnaaagaWPfyW8OrlLdawVKsKk5pUno+0sad8lHRPaainkMZdkkdM4jUejcW0A2I+t1turopGlnGZFA5puzKHOJ11u4/LcquqKOkjhBEpD2nUgi4G+ovbYLmK/tVNVVHCp4XzvMxbEKeMue4C93WuRtc7KXyNTk3ktdVik3HkdTXYTnj4mEiKKSV7XDV3B0u2+VvqutoSBqNDsqeqEeGxOZUSxYiJ5AY5RH6BygXFgdbagd2ttr+4J5MShkgbBmma8xSRNOcNLbXu4aCxOu97dbBe58Gp6mspopADCGkOgEjheQ21YSRsB6tgNbgchmOIJxnIio1JLGY+JqNqC6RtVRtpaXEOKRG5oLGykC5Y43y3N9LgXsdRuu4w+sbXUbJgAHate0OByuGhF/eCubjw6mpzNQRubNPwmlzjGPtDpY3FyLX2663W12bhbhddNhbGOYxzTMA4ki4yglpOtjfqdVzdp0o1aLlzjqvAsSqxrJtcjcxJjIqh0hk4YDcxPIDv7lVPqKWEunEtOXPLSXBlnO6a8za9vFXuJMBka87Ftv7+KppqaJrjIaiWFocCGxkAXt3C5XX2dVUrWm5Pl8CjKLzoBWQPc5gZO8j93hOaDe3MgDnzPJWmFOzvaSwsLo75T+6dNFQ1E9DhcDKqaqmlzPAY0yFxv3D5n/AKV1hdRDUTRzQSNkY6+rfcm0Up2s0uz4G8YTS3mtC4Xg+uF7UZP2gXz+BKjZoR+3R+P0KulS0P46Px+hV0vedHPwkv1fJFK49Ihqvwsv6D9FQj7vwV/VfhZf0H6Kgb934Kh0k9ZT8CS24M16zLwo823FbyvzW9yWlUutE3Ui8jRcC++n/fddbi8zW9XH9/kWPzMIiKqZJI7iCIHcMCEqLyhgGUnVuhHReTPH1PwKvVpyb0RrGLNOpwLCas3moISerW5SfEWVVV9h8NmDjTSzU7iPRF87Qfcdfmrx9fSx+vM1vvNlA7HMLabGvpwe+Vv9VtSrXkPQcizCvWp+jJo4ip7KYnT18dI1glEt8krdG2G9+n92uukw/sVh1M0OrC6rktrc5WA9wGvxKshj2GEaVkJ90jf6rDsew9ov5Qwj+U3+ivVbraNaKioteCepPV2hWnFJyx4czcp6SnpG5aanjhHMRsDbqQsaXh5aC5ux5hVbu0mHt/fefdG8/QKEdq8Nc0OYZXAi4+xf/wDlc6Vpd5zKD/fJRznXJcyfdO9xVF2efesrx/8AJk/+xWJ+1NO6IiGGeRx2aGEX8Tss9mqaeMSz1DQ2SZ5kcALAEm5+q3VKVKhPf0zgw2tC/REXPMhauKU4q8Lqac3tJGRpvstpFLSm4VIyXJphPDyfOG0MlcIY4aGCzB9nLASJWTNaSWyMuQ4aW26kbK8wyixDBMKZTGduIVLpCCWOLWw3N97Xt1uOminxC+GSyCOIcJzs/oxtLr/lGYWA1KijfSUzZayrhna1zrOia0OBy30sL+IFhovdXTqS83GnzHV7st7t4FR2kGJYuHQU1RHEGtLXPNQwNieO46kHqG316q/xGnvTwxU9NTEzZHSl7y0AC2oGhJtbW2ul+ihpcSp6mue9sUt2xAMjFO+MgA3FyRbc6Dn3qcVjjKIYsPM7432kzm7hfW/83wvsoKjnuxjjGDWK87eRSHCKV2IyURmrallQ13DcH+jG4i4vppy33K3MEpqWO3pxcSGzo3wwluoOU6gWubOFie69rrYhmnxThwMpH4awShj3FuRwAaXejoPy2OlxcLT7QVzaOKplrKmN8L52eRxxEEudbM49QcwNjfnruUXWTahnVm8qrkvOZiXEp21I8lwtkJdIXVToonu1Oovb0bnc8/ip6QRyxNrJYJoclw2WQ5C51xYgE6777X5qowzHBijK2jmpmxSxSRSObFK5vEzejnDhZ2l2gjlor4z+asME0Dn1EXqhxkc8AXO5JJNyf72UrjKP3aWolWjCGhsOaylrYxIxhcWGJs742ktftlsANzb+7rjWYlXV/ahlDDK6MNjcZsgyZQdmabbNuOt1dVXaYRUL6ipIoYY9ZC3R0hPIc9RZY7J07fJpsdqqVkE1WcwYBq1vK55nqVatbZxTlURpvpLRcTfpmmF0kLdXBt2jlf8AuyrpajFBFL5RRsDbGxY25PzKtMOd5V2iY2MRniNcA1/qk25216K9xIDDWRtlERkcA5vCp2nYgEakblwt7vBXYWka7T0yuBVq3Xk6eVofP4sHlxUHNTuz3vneLAd3fddNg+GS4VGHObZjpB6QYWtbqBud1ZVOJvY1+easIbnYMhbGDlLxyGmrCL8hrsreow9ow2aSaR0r2Ruc1znE21Lhv9e5SXFj91JSfFMihtB1XuRWi7yFQ/xgpGnM0EcxdRn74L5ZBcToo2KH/UI/H6FXioqD/UI/H6FXq930d/Cy8fkilcekiKp/DS/oP0VBa0Z9yv6j8NJ+g/RULvUPuXO6Setp+HzJLbgzRrZHMhjtfWZgNul1ZXvqtUxCbKCbAODjpvZbdl5qvJOMY9mSy1qYREVUFdi9DTVsQbUsGQNe97rXIDWkm19AdO/3LgJ6SZ1Ca+PCIoqFzwGvmbnzE9M2+37osvpFXJJAWTxwRz5btMT3Zc+YZQ0aG5JIFua4/tVjEmN4pDQGaGOGl9F7wSI8/wC873DUDry3X0zolClUt9YptN5b5I4u1ZzpxTjLGdElzf8ABb9jsDwzGMLFdLStjmie6FwZox1gCDblvy/pawaOyzaiqpwftaRj3yNMbho02da4116Jg5wObCjRYdilTBBQZXT1DHcESOdfUkjqPosT4RhFbjEFUMYpzJFI+d0bLEyRF2fKbO2vm1trcrvuFNTlo0iBVajhHVN6c+J4oa7s9WshfT0by2Wp8mBeY2EOs03sXXI9MbXPctuOt7LudE2N+YTSiJjxA8sLz+7my2v4rRo8Aw+k4TXS1bnQ1vlbcrWAE2ba+p9H0BpuopYcDpKKWgpfLZ5qVzsSMYLRw3BtrF1rWGm1/FRU6trWk40pb3g1w+sGXKvCOZpL6/6WkmK9nIaN1UGOfGyp8ldljIIkte2ttO9VFNNTVFVjFK3B4aQYc7icaGJl2tBcfSGYEk5LadVoRVWH1FVRsqMPHkeIMlrZ2NmkNntEhOUZgL+h052V1S4pQVlXDWU2A1Eja9zuLKwPIFrgZxbLrrzPNTVLeG44yjlP6/2aU7ibkmpY9v1zRr4bP5ympWw087Y6kOLZm0144y2+j+WpHJyuaY5qeN5jEbnNBcwG+U8xdUmF49RsxClpx2Zbhcs8nDik4ABBOlwS0de/dXNLmFOGPl4r4y6N0lrZ3NJaTblcgleI6TWFG2hCVKG7qdSyrSqxe9LJMiIvFF8IiLIK3Go2+RySv1a1uoOxXFT1HnLDmmlqpDAyTM3KbGNw3B/ovoVVTR1dO6CS+V29lxfaHBzhNCIcFpi2RpzuIF8/XMva2F9C6gk3iaxnv7y3b1FHzWUQqK4+hV18gYHdDmc06mziSASQBr1vyXX0uO0NRExvlYgDI7PYJmPOvIX56D/pc5TwSYiHNFO+KdlszdwTbkeapa1tOwuEjmEg2II1VydONXR8UWp0oVdcnaS4lFnfVipM0IY4ESPDngaA2FhpYHb/AJVViZ7P4xRztr65ramF4+8myted7gDXu0K42R9GdQ5p8Frvnp2+qLnwCkha7rTTeSvO3p4w2dHFW9ncOlqJKaOoqJJomsMrXOFrakC4Fm3APW/uSXtLSS5pIYZZqyUCLhNcDdjbW8Dvax1HiqfBePUY1QGKB7mCriDiG6AZxe/gvsxlquOX+SuADiwNE7bOAPrW5Xv15KzuqMsvV95Wm6cFuwR86w7s3UY/WjEsdnbkYQ5lMw2aBuAeqvcUxFob5NFZrWWFguifKxk72u4RdJMWM4kTH3OnotBIJNzsF6hjhkeKPiA1EjGvB4TS9oLC4uJvmtyv105qyoSmk8lF1lGWMFH2dpaw1DcRa3SE5mi1w48wOq6KeoxDE8pnw+FoZ6vFNgdQdgXdBuFDTwx1DJZTWQgUwbxctPGGN6hwB3bZ1wdr3CjDoo4oap88Bhlt6ZhjyalwFgTbXKdRvf4VnbXcW+rqpJ938kdSpCp6Ucm1HTVYFzJTQvsPUhDjsRvodifiV5lpMRlYWHFXBpFsojNre4uUVJJPxacEkNMs2Zps0gAmwIvy20vayuaaJss2V9w0NJ0K4N09oK4hQVfLlnljh7SVKnCO8omvEwxwsjc7MWtAvbdR/wAYKHDscwrGPKoqNtRHNDC6RvE2cBzGp5kb9VPb7fxXHvNm1LLDnJPezw7jNvcQrx3ocCegH/kI/H6FXqpKAft7PH6FXa9P0df9I/1fJEVx6RFUm1NKf5D9Fz+f0PBX9X+El/QfoudDbt8FR6RpOpTb7CW24MhqaiSnp3SRM4jxqGdQNT8gVJFVynOZGNaOJZjb2cWaWPvvfTlZblJSySt9ADvcdgtvzOHXzzEk7+iq1pYddSz1O935wSzqwWjKSbEzmDIGsc4kNuXHQ3aNrDT0gpqarNSSWMaI9CHZ9bEXGlt9QrXzLH7Z3wQYLG3aZw8FPPY83HEaKT/V/Jr11MqqtheCBMIXOikbFIXWDJC05XE92vxC5mPsFC4ML8bi/mbFAZPgc3/C70YS0fxnfBZ81N9s74Lq7OltLZ9DqaVNY8UUrihbXElKprjxOXpezNHRYTiFDDiE7jXMY0ufTOIaWkm9tL79VOzCYG1VBUufVSyUVI2ma6NjGB1gRmIce+9l0HmltrcZ/wAFjzQ32z/grM7ras85gte9eHaYhb2scY5f9KdlGct5GySSXHrABpaOR9Mnr8dbnVePNkTqkzuwyMySRGKWTy57C9p3uGtA1V35ob7d6eaG+3eqNKlf0XmlBR5aYJ5dTP0tfaU7MJo4RAafDqeN1O1zIuI98oaHXzCxIvfMd+qUmHyUpAbBhbWtN2iOiLSPEvKufNLfbPTzS32z1vP7Wlxb9sTEVbx4JewrRRiN2amMdK/80EEYPzaVJHBwmZGm+pJJNySTck95Oq3vNLfbyfJPNDfbyKhcbOvblJVsvH/pEiqU48PganDPcscN3ctzzS328ieaG+3kVX7Bqf2e9G3XQ7TU4Z7ljhu7lt+aG+3k+SeaG+3k+Sx9g1P7Peh10O01chWDGXAggEHcFbfmhvt5FnzS320iythVVqoe9Dro9pXspmQRubBGyPNrZotcqo81up3yzCliM0pu6VrQSR0XT+aW+2kWPNDPbSK/bWd5bJqEOPa1n2myrx7Tg6zC4alhD6GInndgWvHhFLAwAUcTbDk0BfQzg0Th6Ujne8AqGXszRzNs5zx+k2XQgrv80PejPX0zgqan4eIwmOAAcVpNttwrp9HV4fQvNOHtcyJ1nRtDnWdJmDANbloLhcjne+pXRwdmaCnHoMuSb3eMx+a2/NjPaO+Cw3eJ+bSyvFEc6tOXM4rG8CbidQXGWVrQ/wC0jY8NbKOhJBt4d61G0xixzzgKnNJGCGNc8ZW2aRcehcHKbbnn1Xf+a4/zn4LHmqM/xHfAIp36WOq/yRG3Sep86hoRHh1TSS1k8vlRju/OAW5HEtDbR6WdcgG4SDBGvw+GjgqZmRRNka57ZGl7mvNyNY7G+p2BvzC+ieaI/av+ATzRF7R/yWXUv+VP/JDNI52jgEUlHDFETHEHnOcxtfv217+ullcMqBSOEuXNpa2v/AKzN2Xw+oroa2VhdPD6juXiNjblfbktl+DxPADpHkBVKttdzrU6yhrHPNczLnBprJSskw7D21ApMMbTvqWkOe0OO+n5dB3aKUPBkzDY6hWUmCQvYRcm453VdJTvgm4bm5SFzdsRuXGLrLRZ7OfgbW8accqBtYeQa5nj9CrtUOHaYhGPf9Cr5dXo8sWsv1P4IjuPTI52GSB7Bu5pCrG4VOG2LmfP+it0XSu9n0Ltp1Vw7yOFSUFhEcMTYY2saLABSIiuxiopRXBEfEIiLYBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAWvU0rKkC+jm7OWwijq0oVYOE1lMym08o0YMNENQ2YSE5eVlvIi0t7albx3KSwjMpOTywiIpzUIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgP/Z",
+      "description": "",
+      "isFeatured": false,
+      "badge": null,
+      "id": "1783022990116",
+      "slug": "maggi",
+      "reviews": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Rice & Flour",
+      "slug": "rice-flour",
+      "imageUrl": "/cat-rice-flour.png",
+      "productCount": 3
+    },
+    {
+      "id": "2",
+      "name": "Grains & Pulses",
+      "slug": "grains-pulses",
+      "imageUrl": "/cat-grains-pulses.png",
+      "productCount": 1
+    },
+    {
+      "id": "3",
+      "name": "Pantry Staples",
+      "slug": "pantry-staples",
+      "imageUrl": "/cat-pantry.png",
+      "productCount": 1
+    },
+    {
+      "id": "4",
+      "name": "Dry Fruits & Nuts",
+      "slug": "dry-fruits-nuts",
+      "imageUrl": "/cat-dry-fruits.png",
+      "productCount": 2
+    },
+    {
+      "id": "5",
+      "name": "Perfumes",
+      "slug": "perfumes",
+      "imageUrl": "/cat-perfumes.png",
+      "productCount": 1
+    },
+    {
+      "id": "6",
+      "name": "Daily Essentials",
+      "slug": "daily-essentials",
+      "imageUrl": "/cat-essentials.png",
+      "productCount": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1783022809434",
+      "userId": "2",
+      "customerName": "test",
+      "customerEmail": "user@user.in",
+      "items": [
+        {
+          "productId": "4",
+          "name": "Toor Dal",
+          "price": 175,
+          "quantity": 1,
+          "imageUrl": "/prod-toor.png",
+          "weight": "1 kg"
+        }
+      ],
+      "subtotal": 175,
+      "discount": 0,
+      "total": 175,
+      "couponCode": null,
+      "shippingAddress": {
+        "fullName": "test",
+        "phone": "1234567890",
+        "addressLine1": "street",
+        "addressLine2": "",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001"
+      },
+      "paymentMethod": "UPI: name@paytm",
+      "status": "Delivered",
+      "createdAt": "2026-07-02T20:06:49.434Z",
+      "updatedAt": "2026-07-02T20:08:55.042Z"
+    },
+    {
+      "id": "ORD-1783023554690",
+      "userId": "2",
+      "customerName": "user",
+      "customerEmail": "user@user.in",
+      "items": [
+        {
+          "productId": "3",
+          "name": "Whole Wheat Flour",
+          "price": 310,
+          "quantity": 2,
+          "imageUrl": "/prod-wheat.png",
+          "weight": "5 kg"
+        }
+      ],
+      "subtotal": 620,
+      "discount": 62,
+      "total": 558,
+      "couponCode": "WELCOME10",
+      "shippingAddress": {
+        "fullName": "user",
+        "phone": "1234567890",
+        "addressLine1": "street 22",
+        "addressLine2": "",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "status": "Processing",
+      "createdAt": "2026-07-02T20:19:14.690Z",
+      "updatedAt": "2026-07-02T20:19:14.691Z"
+    },
+    {
+      "id": "ORD-1783023785804",
+      "userId": "2",
+      "customerName": "user",
+      "customerEmail": "user@user.in",
+      "items": [
+        {
+          "productId": "4",
+          "name": "Toor Dal",
+          "price": 175,
+          "quantity": 1,
+          "imageUrl": "/prod-toor.png",
+          "weight": "1 kg"
+        }
+      ],
+      "subtotal": 175,
+      "discount": 0,
+      "total": 175,
+      "couponCode": null,
+      "shippingAddress": {
+        "fullName": "user",
+        "phone": "1234567890",
+        "addressLine1": "street 22",
+        "addressLine2": "",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001"
+      },
+      "paymentMethod": "UPI: name@paytm",
+      "status": "Processing",
+      "createdAt": "2026-07-02T20:23:05.804Z",
+      "updatedAt": "2026-07-02T20:23:05.804Z"
+    },
+    {
+      "id": "ORD-1783057040072",
+      "userId": "2",
+      "customerName": "user",
+      "customerEmail": "user@user.in",
+      "items": [
+        {
+          "productId": "7",
+          "name": "Premium Almonds",
+          "price": 499,
+          "quantity": 1,
+          "imageUrl": "/prod-almond.png",
+          "weight": "500 g"
+        }
+      ],
+      "subtotal": 499,
+      "discount": 0,
+      "total": 499,
+      "couponCode": null,
+      "shippingAddress": {
+        "fullName": "user",
+        "phone": "1234567890",
+        "addressLine1": "street 22",
+        "addressLine2": "",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001"
+      },
+      "paymentMethod": "UPI: name@paytm",
+      "status": "Confirmed",
+      "createdAt": "2026-07-03T05:37:20.072Z",
+      "updatedAt": "2026-07-03T05:37:31.445Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "1",
+      "code": "WELCOME10",
+      "discountPercent": 10,
+      "minOrderValue": 500,
+      "maxDiscount": 200,
+      "expiresAt": "2026-12-31T23:59:59.000Z",
+      "isActive": true,
+      "description": "10% off on first order above ₹500"
+    },
+    {
+      "id": "2",
+      "code": "BULK20",
+      "discountPercent": 20,
+      "minOrderValue": 2000,
+      "maxDiscount": 500,
+      "expiresAt": "2026-12-31T23:59:59.000Z",
+      "isActive": true,
+      "description": "20% off on bulk orders above ₹2000"
+    }
+  ]
+}
